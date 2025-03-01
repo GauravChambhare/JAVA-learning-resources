@@ -220,7 +220,21 @@
 
 ---
 
-#### 12. **Multithreading**
+#### 12. **Threads & Multithreading**
+- **What are threads in JAVA?**
+
+  In Java, a thread is the smallest unit of execution within a program. It represents a single path of execution, 
+  allowing multiple threads to run concurrently within a Java application. Threads are essential for multitasking and 
+  parallel processing, enabling efficient use of CPU resources.
+
+Key Features of Threads in Java
+- Main Thread: Every Java program starts with a default thread called the "main thread," created by the JVM. It invokes the main() method12.
+
+- Concurrency: Threads allow multiple operations to execute simultaneously, improving performance for tasks like background processing or I/O operations23.
+
+- Independent Execution: Threads share memory but run independently. Exceptions in one thread do not affect others
+
+
 - **What is Multithreading?**  
   Multithreading is a Java feature that allows concurrent execution of two or more threads for maximum utilization of CPU.
 
