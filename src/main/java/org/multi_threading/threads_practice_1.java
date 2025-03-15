@@ -31,12 +31,15 @@ public class threads_practice_1 {
         // Below method can set a thread as Daemon thread.
         // thread2.setDaemon(true);
         // System.out.println(thread2.isDaemon());    
-        
+        thread2.join(3000); // join method pasuses other thread till the current thread finish executing
         // usign runnable
         //first create object of MyRunnable class and then pass this object to Thread class as constructor parameter
 
         MyRunnable runnable1 = new MyRunnable();
         Thread thread3 = new Thread(runnable1);
         thread3.start();
+        // note that even if for sum reason there occurs an exception in any of thread the remaining threads will continue running as intentended
+        // if you want to check this you can do this by intentionally causing a exception in any of the thread and then see.
+        System.out.println(1/0); //even thoudh this casuses exception when Main thread is running, the JVN will continue to run till all user/non-daemon thread finish execution.
     }
 } 

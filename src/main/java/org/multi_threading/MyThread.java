@@ -14,7 +14,8 @@ public class MyThread extends Thread {
                 e.printStackTrace();
             }
          }
-         System.out.println("Thread 2 execution is finished");
+         System.out.println("Thread 2 execution is finished :)");
 	}
+
     
 }

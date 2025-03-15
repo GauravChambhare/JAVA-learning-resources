@@ -13,6 +13,6 @@ public class MyRunnable implements Runnable {
                 e.printStackTrace();
             }
          }
-         System.out.println("Thread 3 execution is finished");
+         System.out.println("Thread 3 execution is finished :)");
 	}
 }

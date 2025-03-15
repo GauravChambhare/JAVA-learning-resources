@@ -151,3 +151,5 @@ public class ThreadPoolExample {
 
 ## Conclusion
 Multithreading in Java allows better CPU utilization and faster execution of independent tasks. Understanding thread lifecycle, synchronization, and thread pools is essential for writing efficient and safe multithreaded applications.
+
+## *Watch this video for more deep knowledge on Threads https://www.youtube.com/watch?v=WldMTtUWqTg&ab_channel=RiddhiDutta*
