@@ -149,7 +149,16 @@ public class ThreadPoolExample {
 }
 ```
 
-## Conclusion
-Multithreading in Java allows better CPU utilization and faster execution of independent tasks. Understanding thread lifecycle, synchronization, and thread pools is essential for writing efficient and safe multithreaded applications.
+### Points to Remember
+| **Aspect**               | **Process**                                 | **Thread**                                  |
+|--------------------------|--------------------------------------------|--------------------------------------------|
+| **Memory**               | Separate memory space (isolated).          | Shares memory (heap) with other threads.   |
+| **Creation**             | Heavyweight (OS involvement).              | Lightweight (JVM-managed).                 |
+| **Context Switching**    | Slower (OS switches memory maps).          | Faster (shared memory).                    |
+| **Communication**        | IPC: Sockets, files, pipes (complex).      | Direct via shared variables (needs synchronization). |
+| **Failure Impact**       | Fails independently.                       | Failing thread can crash the entire process. |
+| **Concurrency Control**  | Not needed (isolated).                     | Requires synchronization (e.g., `synchronized`). |
+| **Resource Usage**       | High (separate memory, files, etc.).       | Low (shares process resources).            |
 
-## *Watch this video for more deep knowledge on Threads https://www.youtube.com/watch?v=WldMTtUWqTg&ab_channel=RiddhiDutta*
+
+### *Watch this video for more deep knowledge on Threads https://www.youtube.com/watch?v=WldMTtUWqTg&ab_channel=RiddhiDutta*

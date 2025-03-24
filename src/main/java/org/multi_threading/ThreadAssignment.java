@@ -16,6 +16,7 @@ public class ThreadAssignment {
 //                System.out.println(i);
                 try {
                     Thread.sleep(500);
+                    System.out.println(i);
                 } catch (Exception e) {
                     System.out.println(e);
                 }
@@ -33,6 +34,7 @@ public class ThreadAssignment {
 //                System.out.println(i * i);
                 try {
                     Thread.sleep(500);
+                    System.out.println(i);
                 } catch (Exception e) {
                     System.out.println(e);
                 }
